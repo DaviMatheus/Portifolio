@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+img {width: 100%;}
+
+.nav-container{
+    background: #090909;
+
+    a{
+        color: white;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 6em;
+
+    .logo{
+        color: white;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        
+        span{
+            color: #f9004d;
+        }
+    }
+
+   
+    ul{
+        display: flex;
+
+        a{
+            display: block;
+            padding: 0 1em;
+            text-transform: capitalize;
+            font-size: 25px;
+        }
+    }
+
+    nav ul li a:hover{
+        color: #f9004d;
+        transition: .4s;
+        
+
+    }
+}
+
+.social, .hero-d {
+    display:  none;
+}
+
+.hero{
+    background: #090909;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+
+    .content{
+       
+        h2{
+            span{
+                color: #f9004d;
+            }
+
+        }
+        h3{
+            span{
+                color: #f9004d;
+            }
+        }
+    }
+}
+
+.meet{
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+.scroll{
+    width: 60px;
+    margin-top: 2em;
+}
+
+.Contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .button-two{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        font-size: 25px;
+        
+    }
+    
+}
+
+.Contact-me .button-two:hover{
+        
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 1050px){
+    .hero{
+        height: 90h;
+    }
+    .nav-container{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header{
+            background: #090909;
+        }
+    }
+    header{
+        padding: 2em 2em 2em 4em;
+
+    }
+    .social{
+        padding: 2em 2em 2em 0;
+    }
+
+    .social{
+        display: block;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 13em;
+            float: right;
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content{
+            background: #090909;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+
+            h1{
+                font-size: 2em;
+                line-height: 1.2em;
+            }
+            h2{
+                font-size: 3em;
+                line-height: 1.2em;
+
+                span{
+                    color: #f9004d;
+                }
+
+            }
+            h3{
+                font-size: 3em;
+                line-height: 1.2em;
+
+                span{
+                    color: #f9004d;
+                }
+            }
+        }
+    }
+    .meet {
+        margin: unset;
+    }
+    .hero-d{
+        display: unset;
+        margin-left: -51.4%;
+        margin-top: 15%;
+        width: 100%;
+    }
+}
+
+@media only sreen and (min-width: 1250px){
+    header{
+        padding: 2em 2em 2em 10em;
+    }
+
+    .social-header {
+        padding: 2em 10em 2em 0;
+    }
+    
+    .hero .content{
+        padding: 6em 8em 6em 10em;
+    }
+}
+
+
+@media only screen and (min-width: 1550px){
+    header{
+        padding: 2em 2em 2em 20em;
+    }
+
+    .social-header{
+        padding: 2em 20em 2em 0;
+    }
+
+    .hero .content{
+        padding: 9em 20em 6em 20em ;
+    }
+}
